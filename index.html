@@ -31,7 +31,7 @@
     }
 
     function createJwt({ user_id, email, name }) {
-      const secret = "JAuQtfGlJ-u_eaPOaVpRIj3Lb9JoJvnibmJhpCenYfU"; // demo-only
+      const secret = "kbbIVRPeOp25zFvZl7TPfnGDCGjR0A8o-wvVpa686zw"; // demo-only
       const header = { alg: "HS256", typ: "JWT" };
       const payload = {
         user_id,
@@ -55,7 +55,7 @@
 
       window.intercomSettings = {
         api_base: "https://api-iam.intercom.io",
-        app_id: "tty5q0e2",
+        app_id: "pxp9xz5m",
         intercom_user_jwt: token
       };
 
@@ -151,8 +151,7 @@
 <script>
   window.intercomSettings = {
     api_base: "https://api-iam.intercom.io",
-    app_id: "tty5q0e2",
-    messenger_environment: "eix6ayqgdq",
+    app_id: "pxp9xz5m",
     user_id: user.id, // IMPORTANT: 
     // In Salesforce, ensure that each user has a unique external_id, typically their user_id or email.
     // In Intercom, when installing Messenger, pass a user_id that matches the external_id used for that user in Salesforce.
@@ -165,8 +164,8 @@
 
 
 <script>
-  // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/tty5q0e2'
-  (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/tty5q0e2';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+  // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/pxp9xz5m'
+  (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/pxp9xz5m';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
 </script>
 </body>
 </html>
